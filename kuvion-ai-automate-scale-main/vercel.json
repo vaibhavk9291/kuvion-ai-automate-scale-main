@@ -1,11 +1,12 @@
 {
-    "framework": "vite",
-    "buildCommand": "npx vite build",
-    "outputDirectory": "dist",
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "/test",
+            "dest": "/"
         }
     ]
 }
