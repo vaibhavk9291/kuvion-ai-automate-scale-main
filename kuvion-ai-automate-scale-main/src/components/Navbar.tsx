@@ -80,7 +80,8 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <button
-            onClick={() => (window as any).Cal?.("modal", "30min", { layout: "month_view", theme: "dark" })}
+            data-cal-link="pixonx-ai-rr9on1/30min"
+            data-cal-config='{"layout":"month_view","theme":"dark"}'
             className="btn-primary text-sm"
           >
             Book a Call
@@ -112,10 +113,9 @@ const Navbar = () => {
               </button>
             ))}
             <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                (window as any).Cal?.("modal", "30min", { layout: "month_view", theme: "dark" });
-              }}
+              onClick={() => setMobileMenuOpen(false)}
+              data-cal-link="pixonx-ai-rr9on1/30min"
+              data-cal-config='{"layout":"month_view","theme":"dark"}'
               className="btn-primary text-lg mt-8"
             >
               Book a Call

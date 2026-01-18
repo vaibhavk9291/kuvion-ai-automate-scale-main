@@ -23,7 +23,8 @@ const CTASection = () => {
 
           <div className="pt-4 section-fade-in animate-delay-100">
             <button
-              onClick={() => (window as any).Cal?.("modal", "30min", { layout: "month_view", theme: "dark" })}
+              data-cal-link="pixonx-ai-rr9on1/30min"
+              data-cal-config='{"layout":"month_view","theme":"dark"}'
               className="btn-primary text-lg px-10 py-5 group"
             >
               Book Strategy Call

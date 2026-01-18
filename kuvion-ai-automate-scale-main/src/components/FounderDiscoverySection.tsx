@@ -33,7 +33,7 @@ const FounderDiscoverySection = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 px-4 relative">
+    <section id="contact" className="py-24 md:py-32 px-4 relative">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 animate-fade-in">
@@ -49,7 +49,8 @@ const FounderDiscoverySection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.1s' }}>
           <Button
             size="lg"
-            onClick={() => (window as any).Cal?.("modal", "30min", { layout: "month_view", theme: "dark" })}
+            data-cal-link="pixonx-ai-rr9on1/30min"
+            data-cal-config='{"layout":"month_view","theme":"dark"}'
             className="group relative bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold shadow-glow hover:shadow-glow-intense transition-all duration-300"
           >
             <Calendar className="mr-2 h-5 w-5" />
@@ -59,7 +60,8 @@ const FounderDiscoverySection = () => {
           <Button
             size="lg"
             variant="outline"
-            onClick={() => (window as any).Cal?.("modal", "deep-dive-founder-call", { layout: "month_view", theme: "dark" })}
+            data-cal-link="pixonx-ai-rr9on1/deep-dive-founder-call"
+            data-cal-config='{"layout":"month_view","theme":"dark"}'
             className="group relative border-primary/30 bg-card/50 backdrop-blur-sm text-foreground hover:bg-primary/10 hover:border-primary px-8 py-6 text-lg font-semibold transition-all duration-300"
           >
             <Phone className="mr-2 h-5 w-5" />

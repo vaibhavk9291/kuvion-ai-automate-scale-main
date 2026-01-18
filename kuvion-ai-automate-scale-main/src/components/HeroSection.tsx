@@ -21,7 +21,8 @@ const HeroSection = () => {
 
             <div className="flex flex-wrap gap-4 section-fade-in animate-delay-200">
               <button
-                onClick={() => (window as any).Cal?.("modal", "30min", { layout: "month_view", theme: "dark" })}
+                data-cal-link="pixonx-ai-rr9on1/30min"
+                data-cal-config='{"layout":"month_view","theme":"dark"}'
                 className="btn-primary"
               >
                 Book Strategy Call
