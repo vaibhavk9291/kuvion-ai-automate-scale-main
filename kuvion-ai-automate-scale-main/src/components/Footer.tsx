@@ -33,11 +33,8 @@ const Footer = () => {
 
           {/* Brand & Socials */}
           <div className="flex flex-col items-center md:items-start gap-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-sm">P</span>
-              </div>
-              <span className="font-display font-bold text-lg text-foreground">Pixonx AI</span>
+            <div className="h-12 flex items-center">
+              <img src="/pixonx-full-logo.png" alt="Pixonx AI" className="h-full w-auto object-contain" />
             </div>
 
             <div className="flex items-center gap-4">

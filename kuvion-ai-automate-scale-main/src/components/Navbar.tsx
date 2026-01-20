@@ -59,10 +59,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <button onClick={() => handleNavigation('/')} className="flex items-center gap-2 z-50">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-            <img src="/logo.png" alt="Pixonx AI Logo" className="w-full h-full object-contain" />
+          <div className="h-10 flex items-center">
+            <img src="/pixonx-full-logo.png" alt="Pixonx AI" className="h-full w-auto object-contain" />
           </div>
-          <span className="font-display font-bold text-xl text-foreground">Pixonx AI</span>
         </button>
 
         {/* Desktop Menu */}
