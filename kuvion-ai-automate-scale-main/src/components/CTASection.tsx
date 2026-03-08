@@ -1,55 +1,41 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { AuroraBackground } from '@/components/ui/aurora-background';
+import { motion } from 'framer-motion';
 
 const CTASection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent" />
-
-      <div className="container mx-auto px-6 relative">
-        <div className="max-w-3xl mx-auto text-center space-y-8 section-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 glass-card text-sm text-muted-foreground mb-4">
-            <Sparkles className="w-4 h-4 text-primary" />
-            Limited availability
-          </div>
-
-          <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl">
-            Ready to <span className="glow-text">automate</span> your startup?
-          </h2>
-
-          <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto">
-            Book a free strategy call and discover how AI can transform your operations.
-          </p>
-
-          <div className="pt-4 section-fade-in animate-delay-100">
-            <button
-              data-cal-link="pixonx-ai-rr9on1/30min"
-              data-cal-config='{"layout":"month_view","theme":"dark"}'
-              className="btn-primary text-lg px-10 py-5 group"
-            >
-              Book Strategy Call
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </div>
-
-          {/* Trust badges */}
-          <div className="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-muted-foreground section-fade-in animate-delay-200">
-            <span className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500" />
-              Free 30-min call
-            </span>
-            <span className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500" />
-              No commitment
-            </span>
-            <span className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500" />
-              Custom proposal
-            </span>
-          </div>
+    <AuroraBackground className="!h-auto py-32">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.8, ease: 'easeInOut' }}
+        className="relative flex flex-col items-center justify-center text-center px-6 z-10"
+      >
+        <p className="text-sm font-medium tracking-widest text-slate-500 uppercase mb-4">
+          Ready to grow?
+        </p>
+        <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white tracking-tight mb-6 max-w-3xl">
+          Ready to Build Your AI Growth System?
+        </h2>
+        <p className="text-lg md:text-xl text-slate-600 dark:text-neutral-200 max-w-xl mb-10">
+          Book a free 30-minute strategy call and discover how AI-powered marketing can scale your business.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <button
+            data-cal-link="pixonx-ai-rr9on1/30min"
+            data-cal-config='{"layout":"month_view","theme":"dark"}'
+            className="bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-full text-lg font-medium hover:scale-105 transition-transform shadow-lg"
+          >
+            Book Strategy Call
+          </button>
+          <button
+            onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+            className="border border-slate-300 text-slate-900 dark:text-white px-8 py-4 rounded-full text-lg font-medium hover:scale-105 transition-transform"
+          >
+            View Our Work
+          </button>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </AuroraBackground>
   );
 };
 
