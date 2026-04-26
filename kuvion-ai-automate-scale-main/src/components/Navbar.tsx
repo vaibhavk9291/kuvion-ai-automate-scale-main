@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Briefcase, FolderOpen, CreditCard, Users, Mail } from 'lucide-react';
+import { Menu, X, Home, Briefcase, FolderOpen, CreditCard, Users, Mail, GraduationCap } from 'lucide-react';
 import { NavBar } from '@/components/ui/tubelight-navbar';
 
 const Navbar = () => {
@@ -46,6 +46,7 @@ const Navbar = () => {
     { name: 'Work', url: '/', icon: FolderOpen, sectionId: 'portfolio' },
     { name: 'Pricing', url: '/', icon: CreditCard, sectionId: 'pricing' },
     { name: 'About', url: '/', icon: Users, sectionId: 'about' },
+    { name: 'Careers', url: '/careers', icon: GraduationCap, sectionId: '' },
     { name: 'Contact', url: '/', icon: Mail, sectionId: 'contact' },
   ];
 
