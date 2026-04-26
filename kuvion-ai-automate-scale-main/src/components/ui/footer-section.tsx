@@ -53,19 +53,19 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <a href="#" className="block transition-colors hover:text-primary">
+              <a href="/" className="block transition-colors hover:text-primary">
                 Home
               </a>
-              <a href="#about" className="block transition-colors hover:text-primary">
+              <a href="/about" className="block transition-colors hover:text-primary">
                 About Us
               </a>
-              <a href="#services" className="block transition-colors hover:text-primary">
+              <a href="/#services" className="block transition-colors hover:text-primary">
                 Services
               </a>
-              <a href="#pricing" className="block transition-colors hover:text-primary">
+              <a href="/#pricing" className="block transition-colors hover:text-primary">
                 Pricing
               </a>
-              <a href="#contact" className="block transition-colors hover:text-primary">
+              <a href="/#contact" className="block transition-colors hover:text-primary">
                 Contact
               </a>
             </nav>
