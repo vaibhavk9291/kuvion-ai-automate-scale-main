@@ -87,7 +87,7 @@ export const About3 = ({
     buttonUrl: "https://shadcnblocks.com",
   },
   companiesTitle = "Valued by clients worldwide",
-  companies = defaultCompanies,
+  companies,
   achievementsTitle = "Our Achievements in Numbers",
   achievementsDescription = "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
   achievements = defaultAchievements,
@@ -110,14 +110,17 @@ export const About3 = ({
               <img
                 src={breakout.src}
                 alt={breakout.alt}
-                className="mr-auto h-12"
+                className="mr-auto h-14 w-14 object-contain rounded-full shadow-sm"
               />
               <div>
                 <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
                 <p className="text-muted-foreground">{breakout.description}</p>
               </div>
               <Button variant="outline" className="mr-auto" asChild>
-                <a href={breakout.buttonUrl} target="_blank">
+                <a
+                  href={breakout.buttonUrl}
+                  {...(breakout.buttonUrl?.startsWith('http') ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
                   {breakout.buttonText}
                 </a>
               </Button>
@@ -129,21 +132,23 @@ export const About3 = ({
             />
           </div>
         </div>
-        <div className="py-32">
-          <p className="text-center">{companiesTitle} </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-8">
-            {companies.map((company, idx) => (
-              <div className="flex items-center gap-3" key={company.src + idx}>
-                <img
-                  src={company.src}
-                  alt={company.alt}
-                  className="h-6 w-auto md:h-8"
-                />
-              </div>
-            ))}
+        {companies && companies.length > 0 && (
+          <div className="py-24">
+            <p className="text-center">{companiesTitle} </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-8">
+              {companies.map((company, idx) => (
+                <div className="flex items-center gap-3" key={company.src + idx}>
+                  <img
+                    src={company.src}
+                    alt={company.alt}
+                    className="h-6 w-auto md:h-8"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="relative overflow-hidden rounded-xl bg-muted p-10 md:p-16">
+        )}
+        <div className="mt-16 relative overflow-hidden rounded-xl bg-muted p-10 md:p-16">
           <div className="flex flex-col gap-4 text-center md:text-left">
             <h2 className="text-4xl font-semibold">{achievementsTitle}</h2>
             <p className="max-w-screen-sm text-muted-foreground">

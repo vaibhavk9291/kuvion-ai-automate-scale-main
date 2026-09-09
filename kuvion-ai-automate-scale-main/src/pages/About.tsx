@@ -6,10 +6,10 @@ const founders = [
   {
     name: "Kunal Manjare",
     role: "Co-Founder",
-    bio: "I am the Co-founder of Pixonx AI to help companies cut through the AI hype and implement solutions that actually drive results whether that's automating workflows, enhancing customer experiences, or unlocking new revenue streams.",
+    bio: "I am the Co-founder of SocialMints to help companies implement growth and marketing solutions that actually drive results whether that's automating workflows, enhancing customer experiences, or unlocking new revenue streams.",
     image: "/images/founder.png",
     socials: {
-      email: "mailto:cofounder1@email.com",
+      email: "mailto:socialmints.sm@gmail.com",
       linkedin: "https://linkedin.com/in/kunal-manjare-421351270/",
       twitter: "https://x.com/kunalair2/"
     }
@@ -17,10 +17,10 @@ const founders = [
   {
     name: "Vaibhav Kale",
     role: "Co-Founder",
-    bio: "As co-founder of Pixonx AI I bridge the gap between cutting-edge AI capabilities and practical business applications helping teams implement automation, intelligence, and scale without the complexity.",
+    bio: "As co-founder of SocialMints I bridge the gap between cutting-edge AI capabilities and practical business applications helping teams implement automation, intelligence, and scale without the complexity.",
     image: "/images/cofounder.jpg",
     socials: {
-      email: "mailto:cofounder2@email.com",
+      email: "mailto:socialmints.sm@gmail.com",
       linkedin: "https://linkedin.com/in/vaibhav-kale9291/",
       twitter: "https://x.com/KaleVaibha8521/"
     }
@@ -39,7 +39,7 @@ const About = () => {
               Meet the Team
             </h1>
             <p className="text-[#6B7280] text-[17px] max-w-2xl mx-auto">
-              The minds behind Pixonx AI Studio, dedicated to revolutionizing how businesses grow and scale.
+              The minds behind SocialMints, dedicated to revolutionizing how businesses grow and scale.
             </p>
           </div>
 

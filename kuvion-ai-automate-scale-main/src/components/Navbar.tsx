@@ -43,8 +43,6 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', url: '/', icon: Home, sectionId: '' },
     { name: 'Services', url: '/', icon: Briefcase, sectionId: 'services' },
-    { name: 'Work', url: '/', icon: FolderOpen, sectionId: 'portfolio' },
-    { name: 'Pricing', url: '/', icon: CreditCard, sectionId: 'pricing' },
     { name: 'About', url: '/', icon: Users, sectionId: 'about' },
     { name: 'Careers', url: '/careers', icon: GraduationCap, sectionId: '' },
     { name: 'Contact', url: '/', icon: Mail, sectionId: 'contact' },
@@ -63,14 +61,20 @@ const Navbar = () => {
           {/* Logo */}
           <button
             onClick={() => handleNavigation('/')}
-            className="flex items-center gap-2 z-50"
+            className="flex items-center gap-2.5 z-50 text-left group"
           >
-            <div className="h-20 flex items-center">
-              <img
-                src="/pixonx-full-logo.png"
-                alt="Pixonx AI Studio"
-                className="h-full w-auto object-contain"
-              />
+            <img
+              src="/socialmints-logo.png"
+              alt="SocialMints"
+              className="h-12 w-12 md:h-14 md:w-14 object-contain rounded-full transition-transform duration-200 group-hover:scale-105"
+            />
+            <div className="flex flex-col justify-center">
+              <span className="font-bold text-lg md:text-xl tracking-tight text-[#111111] leading-none">
+                SocialMints
+              </span>
+              <span className="text-[10px] uppercase tracking-wider text-[#6B7280] font-medium mt-0.5 hidden sm:block">
+                Grow • Engage • Succeed
+              </span>
             </div>
           </button>
 

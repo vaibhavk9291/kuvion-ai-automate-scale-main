@@ -27,10 +27,10 @@ const HeroSection = () => {
               </button>
               
               <button
-                onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 className="px-8 py-4 rounded-full transition-all hover:scale-105 border border-[#cbd5e0] text-[18px] font-medium text-[#1a1a1a] bg-transparent"
               >
-                View Our Work
+                Explore Services
               </button>
             </div>
             
@@ -70,29 +70,34 @@ const HeroSection = () => {
         className="!min-h-0 -mt-32 pb-20"
         programs={[
           {
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=500&fit=crop',
-            category: 'AI MARKETING',
+            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=800&fit=crop',
+            category: 'DIGITAL MARKETING',
             title: 'Data-driven campaign strategy',
           },
           {
-            image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=500&fit=crop',
+            image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=800&fit=crop',
             category: 'SOCIAL MEDIA',
-            title: 'Instagram growth engine',
+            title: 'Instagram & Facebook growth',
           },
           {
-            image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=500&fit=crop',
-            category: 'UGC ADS',
-            title: 'AI-powered creator ads',
+            image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=800&fit=crop',
+            category: 'CONTENT CREATION',
+            title: 'Reels & creator video content',
           },
           {
-            image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=500&fit=crop',
-            category: 'WEB DEVELOPMENT',
-            title: 'High-converting landing pages',
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=800&fit=crop',
+            category: 'PAID ADVERTISING',
+            title: 'Performance ad campaigns',
           },
           {
-            image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=500&fit=crop',
-            category: 'ANALYTICS',
-            title: 'Performance dashboards',
+            image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&h=800&fit=crop',
+            category: 'BRANDING & STRATEGY',
+            title: 'Brand identity & positioning',
+          },
+          {
+            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=800&fit=crop',
+            category: 'MARKETING CONSULTATION',
+            title: 'Strategic growth audits',
           },
         ]}
       >

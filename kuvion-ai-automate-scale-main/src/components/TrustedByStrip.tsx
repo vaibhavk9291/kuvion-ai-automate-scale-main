@@ -1,6 +1,31 @@
 import { useScrollFadeIn } from '@/hooks/useScrollFadeIn';
 
-const logos = ['Slack', 'Zoom', 'Spotify', 'Airbnb', 'Envato', 'Shopify', 'Notion', 'Figma'];
+const brands = [
+  {
+    src: "https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-1.svg",
+    alt: "Arc",
+  },
+  {
+    src: "https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-2.svg",
+    alt: "Descript",
+  },
+  {
+    src: "https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-3.svg",
+    alt: "Mercury",
+  },
+  {
+    src: "https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-4.svg",
+    alt: "Ramp",
+  },
+  {
+    src: "https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-5.svg",
+    alt: "Retool",
+  },
+  {
+    src: "https://shadcnblocks.com/images/block/logos/company/fictional-company-logo-6.svg",
+    alt: "Watershed",
+  },
+];
 
 const TrustedByStrip = () => {
   const [ref, isVisible] = useScrollFadeIn<HTMLElement>();
@@ -15,14 +40,18 @@ const TrustedByStrip = () => {
           Trusted by growing brands
         </p>
         <div className="marquee-container">
-          <div className="marquee-track">
-            {[...logos, ...logos].map((logo, i) => (
-              <span
+          <div className="marquee-track items-center">
+            {[...brands, ...brands, ...brands].map((brand, i) => (
+              <div
                 key={i}
-                className="text-[#D1D5DB] text-lg md:text-xl font-semibold whitespace-nowrap select-none hover:text-[#9CA3AF] transition-colors duration-300"
+                className="flex items-center justify-center shrink-0 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 px-6"
               >
-                {logo}
-              </span>
+                <img
+                  src={brand.src}
+                  alt={brand.alt}
+                  className="h-7 md:h-8 w-auto object-contain select-none"
+                />
+              </div>
             ))}
           </div>
         </div>

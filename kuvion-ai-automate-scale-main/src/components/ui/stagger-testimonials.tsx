@@ -9,7 +9,7 @@ const SQRT_5000 = Math.sqrt(5000);
 const testimonials = [
   {
     tempId: 0,
-    testimonial: "Pixonx AI completely transformed our ad performance. Our ROAS went from 2x to 7x in just 3 months.",
+    testimonial: "SocialMints completely transformed our ad performance. Our ROAS went from 2x to 7x in just 3 months.",
     by: "Rahul S., Founder at GrowthLabs",
     imgSrc: "https://i.pravatar.cc/150?img=1"
   },
@@ -33,13 +33,13 @@ const testimonials = [
   },
   {
     tempId: 4,
-    testimonial: "If I could give 11 stars, I'd give 12. The team at Pixonx is simply outstanding.",
+    testimonial: "If I could give 11 stars, I'd give 12. The team at SocialMints is simply outstanding.",
     by: "Vikram R., Head of Growth at ScaleUp",
     imgSrc: "https://i.pravatar.cc/150?img=11"
   },
   {
     tempId: 5,
-    testimonial: "SO HAPPY WE FOUND PIXONX! They've saved us hundreds of hours on content and campaigns.",
+    testimonial: "SO HAPPY WE FOUND SOCIALMINTS! They've saved us hundreds of hours on content and campaigns.",
     by: "Ananya D., Brand Manager at FreshBite",
     imgSrc: "https://i.pravatar.cc/150?img=16"
   },
@@ -51,7 +51,7 @@ const testimonials = [
   },
   {
     tempId: 7,
-    testimonial: "I would be lost without Pixonx's analytics dashboards. The ROI is EASILY 100X for us.",
+    testimonial: "I would be lost without SocialMints' analytics dashboards. The ROI is EASILY 100X for us.",
     by: "Meera J., Data Lead at InsightPro",
     imgSrc: "https://i.pravatar.cc/150?img=8"
   },
@@ -63,13 +63,13 @@ const testimonials = [
   },
   {
     tempId: 9,
-    testimonial: "Professional, creative, and results-driven. Pixonx is the real deal.",
+    testimonial: "Professional, creative, and results-driven. SocialMints is the real deal.",
     by: "Divya N., CMO at NovaBrand",
     imgSrc: "https://i.pravatar.cc/150?img=10"
   },
   {
     tempId: 10,
-    testimonial: "We've tried many agencies, but Pixonx stands out in terms of creativity and performance.",
+    testimonial: "We've tried many agencies, but SocialMints stands out in terms of creativity and performance.",
     by: "Aditya L., CEO at LaunchPad",
     imgSrc: "https://i.pravatar.cc/150?img=14"
   },

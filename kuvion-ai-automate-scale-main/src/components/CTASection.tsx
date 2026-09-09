@@ -28,10 +28,10 @@ const CTASection = () => {
             Book Strategy Call
           </button>
           <button
-            onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             className="border border-slate-300 text-slate-900 dark:text-white px-8 py-4 rounded-full text-lg font-medium hover:scale-105 transition-transform"
           >
-            View Our Work
+            Explore Services
           </button>
         </div>
       </motion.div>
