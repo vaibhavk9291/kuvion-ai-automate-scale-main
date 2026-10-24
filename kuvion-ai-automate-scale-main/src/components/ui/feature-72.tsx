@@ -9,6 +9,10 @@ export interface Feature {
   category?: string;
   points?: string[];
   icon?: React.ReactNode;
+  action?: {
+    text: string;
+    url: string;
+  };
 }
 
 interface Feature72Props {
@@ -164,6 +168,20 @@ export const Feature72 = ({
                         </li>
                       ))}
                     </ul>
+                  )}
+
+                  {feature.action && (
+                    <div className="mt-5 pt-4 border-t border-white/10">
+                      <a
+                        href={feature.action.url}
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-300 hover:text-white transition-colors"
+                      >
+                        {feature.action.text}
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                      </a>
+                    </div>
                   )}
                 </div>
               </div>

@@ -6,7 +6,7 @@ const ServicesSection = () => {
       <Feature72
         heading="Our Services"
         taglineBadge="Services"
-        description="Comprehensive digital marketing and growth solutions tailored to scale your brand."
+        description="Comprehensive digital marketing, growth systems, and turnkey app development tailored to scale your brand."
         linkText="Book a Strategy Call"
         linkUrl="#contact"
         features={[
@@ -99,20 +99,27 @@ const ServicesSection = () => {
             ],
           },
           {
-            id: 'marketing-consultation',
-            title: 'Marketing Consultation',
-            category: 'MARKETING CONSULTATION',
+            id: 'app-development',
+            title: 'App Development',
+            category: 'IOS & ANDROID',
             icon: (
-              <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 18h.01" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             ),
             points: [
-              'Digital marketing audit',
-              'Growth strategy',
-              'Campaign planning',
-              'Marketing recommendations',
+              'Complete Android & iOS apps',
+              'UI/UX design & interactive prototypes',
+              'Ready-to-launch production build',
+              'Play Store & App Store submission',
+              'Backend, APIs & cloud database setup',
+              'Ongoing maintenance & feature updates',
             ],
+            action: {
+              text: 'Watch Live App Demos & Mascot Animations',
+              url: '#app-showcase',
+            },
           },
         ]}
       />

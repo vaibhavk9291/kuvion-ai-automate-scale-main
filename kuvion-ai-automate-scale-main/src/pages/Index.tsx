@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import TrustedByStrip from '@/components/TrustedByStrip';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
+import AppShowcaseSection from '@/components/AppShowcaseSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
@@ -16,6 +17,7 @@ const Index = () => {
         <TrustedByStrip />
         <AboutSection />
         <ServicesSection />
+        <AppShowcaseSection />
         <TestimonialsSection />
         <CTASection />
       </main>
