@@ -20,11 +20,15 @@ const ServicesSection = () => {
               </svg>
             ),
             points: [
-              'Digital marketing strategy',
-              'Online growth campaigns',
-              'Campaign planning',
-              'Performance analysis',
+              'Digital marketing & growth strategy',
+              'High-converting online campaigns',
+              'Audience targeting & funnels',
+              'Performance tracking & analytics',
             ],
+            action: {
+              text: 'Explore Growth Strategy',
+              url: '#contact',
+            },
           },
           {
             id: 'short-form-content-editing',
@@ -37,11 +41,10 @@ const ServicesSection = () => {
               </svg>
             ),
             points: [
-              'Vertical reels, TikToks & YouTube Shorts',
-              'Hook optimization & retention-driven pacing',
-              'Dynamic kinetic captions & trending presets',
-              'Visual punch-ins, motion B-roll & sound effects',
-              'Repurposing long-form podcasts into viral clips',
+              'Vertical reels, TikToks & Shorts',
+              'Hook optimization & retention pacing',
+              'Dynamic kinetic captions & presets',
+              'Visual punch-ins, B-roll & SFX',
             ],
             action: {
               text: 'Watch Live Video Showcase',
@@ -58,11 +61,15 @@ const ServicesSection = () => {
               </svg>
             ),
             points: [
-              'Social media creatives',
+              'High-converting social media creatives',
               'Carousel graphics & promotional banners',
               'Engaging captions & content calendars',
               'Creative concepts & brand storytelling',
             ],
+            action: {
+              text: 'View Creative Solutions',
+              url: '#contact',
+            },
           },
           {
             id: 'video-editing-motion-graphics',
@@ -74,14 +81,13 @@ const ServicesSection = () => {
               </svg>
             ),
             points: [
-              'High-end commercial & real estate property edits',
-              'Vox-style documentary & motion graphics storytelling',
-              'Cinematic color grading & camera stabilization',
-              'Multi-track sound design, SFX & audio mastering',
-              'Raw-to-final before & after video transformation',
+              'High-end commercial & real estate edits',
+              'Vox-style documentary & motion graphics',
+              'Cinematic color grading & stabilization',
+              'Multi-track sound design & mastering',
             ],
             action: {
-              text: 'View Before & After Real Estate Reel',
+              text: 'View Before & After Reel',
               url: '#video-showcase',
             },
           },
@@ -95,13 +101,15 @@ const ServicesSection = () => {
               </svg>
             ),
             points: [
-              'Brand positioning',
-              'Brand strategy',
-              'Social media branding',
-              'Creative direction',
-              'Visual consistency',
-              'Competitor research',
+              'Strategic brand positioning & identity',
+              'Creative direction & visual consistency',
+              'Social media aesthetic & style guide',
+              'Market research & competitor benchmarking',
             ],
+            action: {
+              text: 'Build Brand Identity',
+              url: '#contact',
+            },
           },
           {
             id: 'app-development',
@@ -114,15 +122,13 @@ const ServicesSection = () => {
               </svg>
             ),
             points: [
-              'Complete Android & iOS apps',
+              'Complete iOS & Android mobile apps',
               'UI/UX design & interactive prototypes',
-              'Ready-to-launch production build',
-              'Play Store & App Store submission',
-              'Backend, APIs & cloud database setup',
-              'Ongoing maintenance & feature updates',
+              'Backend APIs & cloud database setup',
+              'App Store & Google Play launch support',
             ],
             action: {
-              text: 'Watch Live App Demos & Mascot Animations',
+              text: 'Watch Live App Demos',
               url: '#app-showcase',
             },
           },

@@ -137,33 +137,35 @@ export const Feature72 = ({
                   />
                 </div>
 
-                <div className="relative z-10 p-8 rounded-3xl h-full flex flex-col justify-start bg-black/80 border border-white/20 shadow-xl transition-all duration-300 group-hover:border-white/40 group-hover:scale-[1.02]">
+                <div className="relative z-10 p-6 sm:p-7 rounded-3xl h-full flex flex-col justify-start bg-black/80 border border-white/20 shadow-xl transition-all duration-300 group-hover:border-white/40 group-hover:scale-[1.02]">
                   {feature.category && (
-                    <div className="mb-3">
-                      <span className="text-[12px] font-medium text-blue-300 uppercase tracking-wider">
+                    <div className="mb-2.5">
+                      <span className="text-[11px] font-semibold text-blue-300 uppercase tracking-wider">
                         {feature.category}
                       </span>
                     </div>
                   )}
 
                   {feature.icon && (
-                    <div className="mb-4 filter drop-shadow-lg text-white">
+                    <div className="mb-3.5 filter drop-shadow-lg text-white">
                       {feature.icon}
                     </div>
                   )}
 
-                  <h3 className="text-2xl font-bold mb-5 text-white tracking-tight">
-                    {feature.title}
-                  </h3>
+                  <div className="min-h-[58px] flex items-start mb-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight leading-snug">
+                      {feature.title}
+                    </h3>
+                  </div>
 
                   {feature.points && feature.points.length > 0 && (
-                    <ul className="space-y-3 mt-auto">
+                    <ul className="space-y-2.5 mb-6 flex-1">
                       {feature.points.map((point, idx) => (
                         <li
                           key={idx}
-                          className="flex items-start gap-2.5 text-[14px] md:text-[15px] text-gray-200 leading-snug"
+                          className="flex items-start gap-2.5 text-[13px] sm:text-[14px] text-gray-200 leading-snug"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2 shrink-0 shadow-sm" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-1.5 shrink-0 shadow-sm" />
                           <span>{point}</span>
                         </li>
                       ))}
@@ -171,14 +173,14 @@ export const Feature72 = ({
                   )}
 
                   {feature.action && (
-                    <div className="mt-5 pt-4 border-t border-white/10">
+                    <div className="mt-auto pt-4 border-t border-white/10">
                       <a
                         href={feature.action.url}
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-300 hover:text-white transition-colors"
+                        className="inline-flex items-center justify-between w-full text-xs font-semibold text-blue-300 hover:text-white transition-colors group/link"
                       >
-                        {feature.action.text}
-                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        <span>{feature.action.text}</span>
+                        <svg className="w-3.5 h-3.5 transform group-hover/link:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                       </a>
                     </div>
