@@ -62,6 +62,9 @@ function Footerdemo() {
               <a href="/#services" className="block transition-colors hover:text-primary">
                 Services
               </a>
+              <a href="/#video-showcase" className="block transition-colors hover:text-primary">
+                Video Editing Showcase
+              </a>
               <a href="/#app-showcase" className="block transition-colors hover:text-primary">
                 App Portfolio
               </a>

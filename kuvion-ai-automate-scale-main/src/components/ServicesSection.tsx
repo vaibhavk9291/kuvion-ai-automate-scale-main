@@ -6,7 +6,7 @@ const ServicesSection = () => {
       <Feature72
         heading="Our Services"
         taglineBadge="Services"
-        description="Comprehensive digital marketing, growth systems, and turnkey app development tailored to scale your brand."
+        description="From viral short-form content editing and high-end motion graphics to AI growth systems and turnkey mobile apps."
         linkText="Book a Strategy Call"
         linkUrl="#contact"
         features={[
@@ -27,22 +27,26 @@ const ServicesSection = () => {
             ],
           },
           {
-            id: 'social-media-management',
-            title: 'Social Media Management',
-            category: 'SOCIAL MEDIA',
+            id: 'short-form-content-editing',
+            title: 'Short-Form Content Editing',
+            category: 'REELS & SHORTS',
             icon: (
-              <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10 8l5 3.5-5 3.5V8z" fill="currentColor" />
               </svg>
             ),
             points: [
-              'Social media strategy',
-              'Content planning',
-              'Post scheduling',
-              'Instagram/Facebook management',
-              'Audience engagement',
-              'Monthly performance reports',
+              'Vertical reels, TikToks & YouTube Shorts',
+              'Hook optimization & retention-driven pacing',
+              'Dynamic kinetic captions & trending presets',
+              'Visual punch-ins, motion B-roll & sound effects',
+              'Repurposing long-form podcasts into viral clips',
             ],
+            action: {
+              text: 'Watch Live Video Showcase',
+              url: '#video-showcase',
+            },
           },
           {
             id: 'content-creation',
@@ -55,30 +59,31 @@ const ServicesSection = () => {
             ),
             points: [
               'Social media creatives',
-              'Reels & short-form video content',
-              'Captions',
-              'Content calendars',
-              'Creative concepts',
-              'Promotional content',
+              'Carousel graphics & promotional banners',
+              'Engaging captions & content calendars',
+              'Creative concepts & brand storytelling',
             ],
           },
           {
-            id: 'paid-advertising',
-            title: 'Paid Advertising',
-            category: 'PAID ADVERTISING',
+            id: 'video-editing-motion-graphics',
+            title: 'Video Editing & Motion Graphics',
+            category: 'POST-PRODUCTION',
             icon: (
-              <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7 2v11h3v9l7-12h-4l4-8z" />
+              <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             ),
             points: [
-              'Meta/Facebook Ads',
-              'Instagram Ads',
-              'Campaign setup',
-              'Audience targeting',
-              'Campaign optimization',
-              'Performance reporting',
+              'High-end commercial & real estate property edits',
+              'Vox-style documentary & motion graphics storytelling',
+              'Cinematic color grading & camera stabilization',
+              'Multi-track sound design, SFX & audio mastering',
+              'Raw-to-final before & after video transformation',
             ],
+            action: {
+              text: 'View Before & After Real Estate Reel',
+              url: '#video-showcase',
+            },
           },
           {
             id: 'branding-strategy',
